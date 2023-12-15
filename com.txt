@@ -1,0 +1,7 @@
+Unix
+
+ls /dev/tty.*
+
+Windows
+
+mode
