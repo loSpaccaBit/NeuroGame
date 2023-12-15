@@ -1,9 +1,12 @@
+# Francesco Pio Nocerino
+# loSpaccaBit
+# Controllo del volume con sensore neurosky
 from module.NeuroPy import NeuroPy
 import time
 import os
 from tqdm import tqdm
 
-object1 = NeuroPy("/dev/tty.usbmodem4971314A36591", 115200, '7d55')
+object1 = NeuroPy("porta_com", 115200, '7d55')
 
 volume = [50, 50, 50, 50, 50]
 
