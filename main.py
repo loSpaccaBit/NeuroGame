@@ -1,3 +1,6 @@
+# Francesco Pio Nocerino
+# loSpaccaBit
+# Macchina vs Ostacoli, il gioco consiste nel spostare la macchinina grazie al sensore di neurosky
 import pygame
 from module.NeuroPy import NeuroPy
 from tqdm import tqdm
@@ -31,7 +34,7 @@ car_position_bar = tqdm(total=width - car_width, desc="Posizione", position=0, l
 car_direction = 0
 
 # Inizializza il sensore NeuroPy
-object1 = NeuroPy("/dev/tty.usbmodem4971314A36591", 115200, '7d55')
+object1 = NeuroPy("porta_com", 115200, '7d55')
 
 # Imposta i callback per i dati del sensore
 def attention_callback(value):
